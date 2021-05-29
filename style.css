@@ -1,0 +1,129 @@
+@media (min-width: 1440px) {
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    body {
+        font-family: 'Barlow Semi Condensed', Arial, Helvetica, sans-serif;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: hsl(180, 35%, 95%);
+    }
+    /* Grid specifications made */
+    .container {
+        width: 1200px;
+        height: 700px;
+        /* background-color: red; */
+        border-radius: 10px;
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        grid-template-rows: 50% 50%;
+
+        column-gap: 30px;
+        row-gap: 30px;
+    }
+    .box {
+        border-radius: 10px;
+        border: none;
+        outline: none;
+        padding: 2rem;
+        /* background-color: red; */
+        box-shadow: 20px 20px 50px rgba(0, 0, 0, .35);
+    }
+    .b1 {
+        grid-column: 1 / span 2;
+    }
+    .b2 {
+        grid-column: 3 / 3;
+    }
+    .b3 {
+        grid-column: 4 / 4;
+        grid-row: 1 / span 2;
+    }
+    .b4 {
+        grid-column: 1 / 1;
+    }
+    .b5 { 
+        grid-column: 2 / span 2;
+    }
+
+    /* Actual design specifications */
+
+    .b1 {
+        background-color: hsl(263, 55%, 52%);
+    }
+    .b2 {
+        background-color: hsl(217, 19%, 35%);
+    }
+    .b3 {
+        background-color: hsl(0, 0%, 100%);
+        color: hsl(217, 19%, 35%);
+    }
+    .b3 * {
+        color: hsl(217, 19%, 35%) !important;
+    }
+    .b4 * {
+        color:hsl(217, 19%, 35%) !important;
+    }
+    .b4 .title {
+        width: 200px;
+    }
+    .b5 {
+        background-color: hsl(219, 29%, 14%);
+    }
+    .profile {
+        /* background-color: red; */
+        width: 200px;
+        height: 40px;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50% 50%;
+        column-gap: 0px;
+        row-gap: 0px
+    }
+    .profile img {
+        grid-column: 1 / 1;
+        grid-row: 1 / 2;
+
+        width: 40px;
+        height: auto;
+        border-radius: 50px;
+        background: no-repeat contain;
+    }
+    .profile .profile-name {
+        grid-column: 2 / 2;
+        grid-row: 1 / 1;
+
+        margin-left: -40px;
+        font-size: 17px;
+        font-weight: 500;
+        color: hsl(0, 0%, 81%);
+    }
+    .profile .profile-desc {
+        grid-column: 2 / 2;
+        grid-row: 2 / 2;
+
+        margin-left: -40px;
+        font-weight: 500;
+        color: hsl(0, 0%, 81%);
+        font-size: 13px;
+        filter: opacity(50%);
+    }
+    .title {
+        font-size: 24px;
+        color: hsl(0, 0%, 81%);
+        font-weight: 600;
+        margin-top: 15px;
+    }
+    .description {
+        font-size: 16px;
+        line-height: 24px;
+        color: hsl(0, 0%, 81%);
+        filter: opacity(70%);
+        font-weight: 500;
+        margin-top: 15px;
+    }
+}
